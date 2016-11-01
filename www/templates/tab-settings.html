@@ -1,0 +1,45 @@
+<ion-view title="Opciones" id="page1">
+    <ion-content padding="true" class="has-header">
+        <form id="virtualReality-form2" class="list">
+            <label class="item item-input" id="virtualReality-input2">
+                <span class="input-label">IP Server</span>
+                <input type="text" placeholder="" ng-model="data.ipAddress">
+            </label>
+            <label class="item item-select" id="virtualReality-select1">
+                <span class="input-label">Formas</span>
+                <select ng-model="data.shape">
+                  <option ng-repeat="option in shapes" value="{{option.id}}">{{option.name}}</option>
+                </select>
+            </label>
+            <label class="item item-select" id="virtualReality-select2">
+                <span class="input-label">Colores</span>
+                <select ng-model="data.color">
+                    <option ng-repeat="option in colors" value="{{option.id}}">{{option.name}}</option>
+                </select>
+            </label>
+            <div id="virtualReality-markdown1" style="color:#000000;">
+                <pre>
+                    <code></code>
+                </pre>
+            </div>
+            <label class="item item-input" id="virtualReality-textarea2">
+                <span class="input-label">Ubicación</span></textarea>
+            </label>
+            <label class="item item-input" id="virtualReality-input4">
+                <span class="input-label">X</span>
+                <input type="number" ng-model="data.location.x" placeholder="">
+            </label>
+            <label class="item item-input" id="virtualReality-input5">
+                <span class="input-label">Y</span>
+                <input type="number" ng-model="data.location.y" placeholder="">
+            </label>
+            <label class="item item-input" id="virtualReality-input6">
+                <span class="input-label">Z</span>
+                <input type="number" ng-model="data.location.z" placeholder="">
+            </label>
+        </form>
+        <button id="virtualReality-button1"
+                class="button button-positive button-block"
+                ng-click="start()">Conectar</button>
+    </ion-content>
+</ion-view>
