@@ -45,20 +45,20 @@ angular.module('starter.services', [])
     var material;
 
     var shapes = {
+      sphere: function() {
+        geometry = new THREE.SphereGeometry(0.5, 32, 32)
+        material = new THREE.MeshBasicMaterial({ color: option.color, wireframe:false});
+        return new THREE.Mesh(geometry, material);
+      },
+
       cube: function() {
-        geometry = new THREE.BoxGeometry(2,1,3,1,1,1);
+        geometry = new THREE.BoxGeometry(1,1,1);
         material = new THREE.MeshBasicMaterial({ color: option.color, wireframe:true});
         return new THREE.Mesh(geometry, material);
       },
 
       cone: function() {
-        geometry = new THREE.CylinderGeometry(0, 3, 8, 4, 1, true);
-        material = new THREE.MeshBasicMaterial({ color: option.color, wireframe:true});
-        return new THREE.Mesh(geometry, material);
-      },
-
-      ring: function() {
-        geometry = new THREE.RingGeometry( 1, 5, 32 );
+        geometry = new THREE.ConeGeometry( 0.5, 5, 7 );
         material = new THREE.MeshBasicMaterial({ color: option.color, wireframe:true});
         return new THREE.Mesh(geometry, material);
       }

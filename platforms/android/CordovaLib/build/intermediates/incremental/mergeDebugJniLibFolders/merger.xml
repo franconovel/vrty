@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/casa-laptop/virmx/maximilian02-virtual_reality-cf24df6ca8db/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/casa-laptop/virmx/maximilian02-virtual_reality-cf24df6ca8db/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Volumes/Users/mezcal/Desktop/Tecnologias Emergentes/GITHUB/vrty/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Volumes/Users/mezcal/Desktop/Tecnologias Emergentes/GITHUB/vrty/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>

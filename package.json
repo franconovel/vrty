@@ -27,5 +27,7 @@
     "cordova-plugin-device-motion",
     "cordova-plugin-device-orientation"
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [
+    "android"
+  ]
 }
